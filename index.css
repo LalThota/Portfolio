@@ -311,15 +311,14 @@ nav ul li a:hover {
     font-size: 30px; 
   }
 }
-
 nav {
-  transition: all 0.3s ease;
-  padding: 20px;
- 
+  padding: 20px 40px;
+  transition: none; /* prevent shrink animation */
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-nav.shrink {
-  padding: 10px;
-  font-size: 14px;
-}
 
