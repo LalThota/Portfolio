@@ -13,6 +13,9 @@ topBtn.onclick = function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 };
+document.getElementById("menu-toggle").addEventListener("click", () => {
+  document.getElementById("nav-list").classList.toggle("show");
+});
 
 document.querySelectorAll('#nav-list a').forEach(link => {
   link.addEventListener('click', () => {
