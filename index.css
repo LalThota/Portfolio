@@ -337,7 +337,7 @@ nav.shrink {
   }
 }
 nav {
-  background-color: #fff;
+  background-color: gray;
   padding: 10px 20px;
   width: 100%;
   position: fixed;
@@ -360,7 +360,7 @@ nav {
 #nav-list li a {
   text-decoration: none;
   font-weight: bold;
-  color: #333;
+  color: gray;
 }
 
 @media (max-width: 768px) {
@@ -372,7 +372,7 @@ nav {
     display: none;
     flex-direction: column;
     text-align: center;
-    background-color: white;
+    background-color: gray;
     width: 100%;
   }
 
@@ -405,6 +405,6 @@ nav.scrolled {
 
 #nav-list li a {
   text-decoration: none;
-  color: white;
+  color: gray;
   font-weight: bold;
 }
