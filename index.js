@@ -1,7 +1,4 @@
-// Typing animation
-const text = ["Sravya", "a Web Developer", "a Designer"];
-let index = 0, charIndex = 0;
-const span = document.querySelector(".typed-text");
+
 
 function type() {
   if (charIndex < text[index].length) {
