@@ -281,8 +281,8 @@ nav ul li a:hover {
 }
 @media (max-width: 768px) {
   .img{
-    width:180px;
-    height:180px;
+    width:100px;
+    height:100px;
     image-position:center;
   }
   nav {
