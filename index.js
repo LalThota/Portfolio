@@ -64,18 +64,10 @@ topBtn.onclick = function () {
   document.documentElement.scrollTop = 0;
 };
 
-const toggle = document.getElementById('menu-toggle');
-const navList = document.getElementById('nav-list');
-
-toggle.addEventListener('click', () => {
-  navList.classList.toggle('show');
-});
-
-// Optional: Auto close nav on link click (without shrinking nav)
 document.querySelectorAll('#nav-list a').forEach(link => {
   link.addEventListener('click', () => {
     if (window.innerWidth <= 768) {
-      navList.classList.remove('show'); // hides the nav menu
+      document.querySelector('nav').classList.add('shrink');
     }
   });
 });
