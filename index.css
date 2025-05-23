@@ -380,3 +380,71 @@ nav {
     display: flex;
   }
 }
+/* Common Styles */
+nav {
+  background-color: gray;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #e0f7e0;
+  color: #000980;
+  border-radius: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+/* Responsive: Mobile View */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  #nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: gray;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    left: 0;
+  }
+
+  #nav-list.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
