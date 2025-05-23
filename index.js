@@ -64,21 +64,11 @@ topBtn.onclick = function () {
   document.documentElement.scrollTop = 0;
 };
 
-window.addEventListener('scroll', function () {
-  const nav = document.querySelector('nav');
-  if (window.scrollY > 50) {
-    nav.classList.add('shrink');
-  } else {
-    nav.classList.remove('shrink');
-  }
-});
-
-
-const navLinks = document.querySelectorAll('#nav-list a');
-navLinks.forEach(link => {
+document.querySelectorAll('#nav-list a').forEach(link => {
   link.addEventListener('click', () => {
-    document.querySelector('nav').classList.add('shrink');
+    if (window.innerWidth <= 768) {
+      document.querySelector('nav').classList.add('shrink');
+    }
   });
 });
-
 
