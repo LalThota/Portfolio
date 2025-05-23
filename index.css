@@ -280,7 +280,7 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 @media (max-width: 768px) {
-  .home img{
+  .img{
     width:180px;
     height:180px;
   }
