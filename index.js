@@ -1,4 +1,4 @@
-
+/*
 document.addEventListener("DOMContentLoaded", type);
 document.getElementById("menu-toggle").addEventListener("click", () => {
   document.getElementById("nav-list").classList.toggle("show");
@@ -19,7 +19,7 @@ certs.forEach(cert => {
 
 close.addEventListener("click", () => {
   modal.style.display = "none";
-});
+});*/
 
 // Back to top
 const topBtn = document.getElementById("topBtn");
