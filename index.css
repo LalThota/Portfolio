@@ -311,13 +311,16 @@ nav ul li a:hover {
     font-size: 30px; 
   }
 }
+/* Default nav style */
 nav {
-  padding: 20px 40px;
-  transition: shrink; /* prevent shrink animation */
-  position: none;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+  transition: all 0.3s ease;
+  padding: 20px ;
+  background-color:gray;
 }
 
+/* Shrunk nav on mobile */
+nav.shrink {
+  padding: 5px;
+  font-size: 10px;
+}
 
