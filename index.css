@@ -24,8 +24,6 @@ header {
 
 
 .img {
-  width: 150px;
-  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
@@ -284,6 +282,8 @@ nav ul li a:hover {
     width:100px;
     height:100px;
     image-position:center;
+    border-radius:50%;
+    justify-content:auto;
   }
   nav {
     padding: 20px;
