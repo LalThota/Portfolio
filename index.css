@@ -283,6 +283,7 @@ nav ul li a:hover {
   .img{
     width:180px;
     height:180px;
+    image-position:center;
   }
   nav {
     padding: 20px;
