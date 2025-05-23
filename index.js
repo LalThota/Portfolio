@@ -66,18 +66,10 @@ topBtn.onclick = function () {
 
 document.querySelectorAll('#nav-list a').forEach(link => {
   link.addEventListener('click', () => {
-    if (window.innerWidth <= 768) {
-      document.querySelector('nav').classList.add('shrink');
-    }
+    document.getElementById('nav-list').classList.remove('show'); // close menu on click
   });
 });
-// Remove any shrinking code
-// Keep only toggle functionality
 
-const toggle = document.getElementById('menu-toggle');
-const navList = document.getElementById('nav-list');
-
-toggle.addEventListener('click', () => {
-  navList.classList.toggle('show');
+document.getElementById('menu-toggle').addEventListener('click', () => {
+  document.getElementById('nav-list').classList.toggle('show'); // toggle menu
 });
-
