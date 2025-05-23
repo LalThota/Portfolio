@@ -30,6 +30,72 @@ header {
   object-fit: cover;
   margin-bottom: 1rem;
 }
+nav {
+  background-color: gray;
+  padding: 10px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+#nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+
+#nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+#nav-list li a:hover {
+  background-color: #e0f7e0;
+  color: #000;
+  border-radius: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  #nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: gray;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  #nav-list.show {
+    display: flex;
+  }
+
+  #nav-list li {
+    margin: 10px 0;
+  }
+}
+
 
 nav {
   background-color: #444;
