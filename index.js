@@ -1,27 +1,4 @@
-/*
-document.addEventListener("DOMContentLoaded", type);
-document.getElementById("menu-toggle").addEventListener("click", () => {
-  document.getElementById("nav-list").classList.toggle("show");
-});
 
-// Modal for certificate
-const modal = document.getElementById("modal");
-const modalImg = document.getElementById("modal-img");
-const certs = document.querySelectorAll(".cert-img");
-const close = document.querySelector(".close");
-
-certs.forEach(cert => {
-  cert.addEventListener("click", () => {
-    modal.style.display = "block";
-    modalImg.src = cert.src;
-  });
-});
-
-close.addEventListener("click", () => {
-  modal.style.display = "none";
-});*/
-
-// Back to top
 const topBtn = document.getElementById("topBtn");
 
 window.onscroll = function () {
