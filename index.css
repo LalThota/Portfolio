@@ -288,6 +288,11 @@ nav ul li a:hover {
     padding: 20px;
     font-size: 20px; 
   }
+  
+  .img {
+    height: 180px;
+    width: 180px;
+  }
 
   #nav-list {
     flex-direction: column;
