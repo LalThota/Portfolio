@@ -62,7 +62,7 @@ nav ul li a {
 .menu-toggle {
   display: none;
   font-size: 2rem;
-  color: white;
+  color: gray;
   cursor: pointer;
   text-align: right;
   top: 0;
@@ -392,7 +392,7 @@ nav {
 
 nav.scrolled {
   padding: 10px 30px;
-  background-color: rgba(0, 128, 128, 0.9); /* change color on scroll */
+  background-color: gray; /* change color on scroll */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
