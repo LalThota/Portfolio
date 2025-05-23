@@ -71,3 +71,13 @@ document.querySelectorAll('#nav-list a').forEach(link => {
     }
   });
 });
+// Remove any shrinking code
+// Keep only toggle functionality
+
+const toggle = document.getElementById('menu-toggle');
+const navList = document.getElementById('nav-list');
+
+toggle.addEventListener('click', () => {
+  navList.classList.toggle('show');
+});
+
