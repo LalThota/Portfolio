@@ -312,3 +312,14 @@ nav ul li a:hover {
   }
 }
 
+nav {
+  transition: all 0.3s ease;
+  padding: 20px 40px;
+  background-color: #fff;
+}
+
+nav.shrink {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
