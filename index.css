@@ -313,8 +313,8 @@ nav ul li a:hover {
 }
 nav {
   padding: 20px 40px;
-  transition: none; /* prevent shrink animation */
-  position: fixed;
+  transition: shrink; /* prevent shrink animation */
+  position: none;
   top: 0;
   width: 100%;
   z-index: 1000;
