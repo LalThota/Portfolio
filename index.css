@@ -45,10 +45,13 @@ nav {
   justify-content: center;
   list-style: none;
   gap: 20px;
+  color:wheat;
+  background-color:gray;
 }
 
 #nav-list li a {
   text-decoration: none;
+  color:black;
   font-weight: bold;
   padding: 8px 12px;
   transition: background 0.3s;
