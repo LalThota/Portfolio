@@ -207,6 +207,8 @@
     alert("Message sent successfully!");
     // You can now submit the form if needed
     // this.submit();
+    if (window.location.hash) {
+    history.replaceState(null, null, ' ');
   });
 </script>
 
@@ -218,6 +220,28 @@
   </div>
 
   <button id="topBtn" title="Back to Top">↑</button>
+  <form name="sentMessage" id="contactForm" onsubmit="handleSubmit(event)">
+  ...
+</form>
+
+<script>
+  function handleSubmit(event) {
+    event.preventDefault(); // prevent default submit
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !subject || !message) {
+      alert('Please fill all the fields.');
+      return;
+    }
+
+    alert('Message sent successfully!');
+    document.getElementById('contactForm').reset(); // reset form
+  }
+</script>
+
  
 
   <script src="index.js"></script>
