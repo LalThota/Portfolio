@@ -314,12 +314,12 @@ nav ul li a:hover {
 
 nav {
   transition: all 0.3s ease;
-  padding: 20px 40px;
-  background-color: #fff;
+  padding: 20px;
+  background-color:black;
 }
 
 nav.shrink {
-  padding: 10px 20px;
+  padding: 10px;
   font-size: 14px;
 }
 
