@@ -22,6 +22,20 @@ document.querySelectorAll('#nav-list a').forEach(link => {
     document.getElementById('nav-list').classList.remove('show'); // close menu on click
   });
 });
+const animatedSections = document.querySelectorAll('.scroll-animate');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+animatedSections.forEach(section => {
+  observer.observe(section);
+});
+
 
 document.getElementById('menu-toggle').addEventListener('click', () => {
   document.getElementById('nav-list').classList.toggle('show'); // toggle menu
